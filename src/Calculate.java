@@ -1,5 +1,6 @@
 /**
  * Created by Администратор on 15.04.2017.
+ * Created by Vladisson on 28.04.2017.
  */
 public class Calculate {
     public static void main(String[] args) {
@@ -10,6 +11,8 @@ public class Calculate {
         int summ = first + second;
         double d = first / second;
         double n = first * second;
-        System.out.println("Sum = "+ summ + " Деление = "+ d + " Умножение = "+ n);
+        int minus = first - second;
+        double stepen = Math.pow(first*1.0, second *1.0);
+        System.out.println("Сложение = "+ summ + " Вычитание = " + minus + " Деление = "+ d + " Умножение = "+ n + " Возведение в степень = " + stepen);
     }
 }
