@@ -9,7 +9,7 @@ public class Calculate {
         int first = Integer.valueOf(args[0]);
         int second = Integer.valueOf(args [1]);
         int summ = first + second;
-        double d = first / second;
+        double d = (double)first / second;
         double n = first * second;
         int minus = first - second;
         double stepen = Math.pow(first*1.0, second *1.0);
