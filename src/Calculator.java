@@ -5,8 +5,8 @@ public class Calculator {
     /**
      * Результат вычисления
      */
-    private int result;
-
+    private double result;
+    private double lastResult;
     /**
      * Суммируем аргументы
      */
@@ -16,11 +16,26 @@ public class Calculator {
 
         }
     }
+
+    public void sub (int param1, int param2){
+
+            this.result = param1 * 1.0 - param2 ;
+
+    }
+    public void multi (int param1, int param2){
+        this.result = param1 * 1.0 * param2;
+    }
+    public void div (int param1, int param2){
+        this.result = param1 * 1.0 / param2;
+    }
+    public void pow(int param1, int param2){
+        this.result = Math.pow(param1, param2);
+    }
     /**
      * Получить результат
      * @return результат вычисления
      */
-    public int  getResult (){
+    public double  getResult (){
         return this.result;
     }
 

@@ -18,6 +18,15 @@ public class InteractRunner {
                 calc.add(Integer.valueOf(first), Integer.valueOf(second));
                 System.out.println("Result:" + calc.getResult());
                 calc.cleanResult();
+                calc.div(Integer.valueOf(first), Integer.valueOf(second));
+                System.out.println("Result:" + calc.getResult());
+                calc.cleanResult();
+                calc.multi(Integer.valueOf(first), Integer.valueOf(second));
+                System.out.println("Result:" + calc.getResult());
+                calc.cleanResult();
+                calc.pow(Integer.valueOf(first), Integer.valueOf(second));
+                System.out.println("Result:" + calc.getResult());
+                calc.cleanResult();
                 System.out.println("Exit: yes/no");
                 exit= reader.next();
 
